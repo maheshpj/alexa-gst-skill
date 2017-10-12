@@ -1,4 +1,4 @@
-gst
+Alexa GST Skill
 =============================
 
 Goods and Services Tax in India
@@ -10,6 +10,8 @@ It is recommended to run this project in a virtualenv. If virtualenvs are unfami
 might be a good place to start.
 
 #.  Create a virtualenv for this project, and activate it.
+#.  ``virtualenv env``
+#.  ``source env/Scripts/activate``
 #.  Use ``pip install -r requirements.txt`` to install the required Python packages.
 #.  You will require ``ngrok`` to make your skill accessible to Alexa for testing. You can download ngrok `here`_.
 
