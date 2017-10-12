@@ -26,7 +26,7 @@ gst_rates_dict = {}
 with open('gst-rates.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        gst_rates_dict[row['item']] = row['rate']
+        gst_rates_dict[row['\xef\xbb\xbfitem']] = row['rate']
 
 
 # Session starter
