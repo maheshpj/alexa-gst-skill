@@ -53,3 +53,9 @@ gst_fact_8: |
 
 gst_fact_9: |
   Under GST, goods and services are taxed at the following rates, 0%, 5%, 12% ,18% and 28%
+
+gst_rate: GST rate for {{ item }} is {{ rate }}
+
+unknown_item_reprompt: |
+  I'm not sure what your item is. You can tell me your item for which you want GST rate, by saying,
+  what is the rate for milk?

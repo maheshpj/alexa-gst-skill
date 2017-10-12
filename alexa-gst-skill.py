@@ -9,7 +9,7 @@ import logging
 import os
 from datetime import datetime
 from random import randint
-
+import csv
 from flask import Flask, render_template
 from flask_ask import Ask, question, statement
 
@@ -20,6 +20,12 @@ app = Flask(__name__)
 ask = Ask(app, '/')
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
+# Read GST Rates from gst-rates.csv file for all items
+gst_rates_dict = {}
+with open('gst-rates.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        gst_rates_dict[row['item']] = row['rate']
 
 # Session starter
 #
@@ -86,6 +92,21 @@ def handle_fact():
     fact_text = render_template('gst_fact_{}'.format(fact_index))
     card_title = render_template('card_title')
     return statement(fact_text).simple_card(card_title, fact_text)
+
+
+@ask.intent('RateIntent', mapping={'item': 'Item'})
+def handle_rate(item):
+    """
+    (STATEMENT) Handles the 'rate' or 'slab' or 'tax' custom intention.
+    """
+    card_title = render_template('card_title')
+    rate = gst_rates_dict[item]
+    if rate is not None:
+        rate_text = render_template('gst_rate', item=item, rate=rate)
+        return statement(rate_text).simple_card(card_title, rate_text)
+    else:
+        question_text = render_template('unknown_item_reprompt')
+        return question(question_text).reprompt(question_text).simple_card(card_title, question_text)
 
 
 # Built-in intents
