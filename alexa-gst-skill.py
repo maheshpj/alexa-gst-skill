@@ -6,17 +6,19 @@
 # Goods and Services Tax in India
 
 import logging
+import os
 from datetime import datetime
-from flask import Flask, json, render_template
-from flask_ask import Ask, request, session, question, statement
+
+from flask import Flask, render_template
+from flask_ask import Ask, question, statement
 
 __author__ = 'Mahesh Jadhav'
 __email__ = 'mahesh.jadhav@capgemini.com'
 
-
 app = Flask(__name__)
 ask = Ask(app, '/')
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
+
 
 # Session starter
 #
@@ -30,6 +32,7 @@ def start_session():
     Fired at the start of the session, this is a great place to initialise state variables and the like.
     """
     logging.debug("Session started at {}".format(datetime.now().isoformat()))
+
 
 # Launch intent
 #
@@ -46,7 +49,7 @@ def handle_launch():
     Templates:
     * Initial statement: 'welcome'
     * Reprompt statement: 'welcome_re'
-    * Card title: 'gst
+    * Card title: 'gst'
     * Card body: 'welcome_card'
     """
 
@@ -58,11 +61,25 @@ def handle_launch():
                                                                           text=welcome_card_text)
 
 
+# Custom intents
+#
+# These intents are custom intents.
+
+@ask.intent('AboutIntent')
+def about():
+    """
+    (STATEMENT) Handles the 'about' custom intention.
+    """
+    about_text = render_template('about')
+    card_title = render_template('card_title')
+    return statement(about_text).simple_card(card_title, about_text)
+
+
 # Built-in intents
 #
 # These intents are built-in intents. Conveniently, built-in intents do not need you to define utterances, so you can
 # use them straight out of the box. Depending on whether you wish to implement these in your application, you may keep
-# or delete them/comment them out.
+#  or delete them/comment them out.
 #
 # More about built-in intents: http://d.pr/KKyx
 
@@ -103,6 +120,7 @@ def handle_no():
     """
     pass
 
+
 @ask.intent('AMAZON.YesIntent')
 def handle_yes():
     """
@@ -117,6 +135,7 @@ def handle_back():
     (?) Handles the 'go back!'  built-in intention.
     """
     pass
+
 
 @ask.intent('AMAZON.StartOverIntent')
 def start_over():
@@ -146,4 +165,8 @@ def session_ended():
 
 
 if __name__ == '__main__':
+    if 'ASK_VERIFY_REQUESTS' in os.environ:
+        verify = str(os.environ.get('ASK_VERIFY_REQUESTS', '')).lower()
+        if verify == 'false':
+            app.config['ASK_VERIFY_REQUESTS'] = False
     app.run(debug=True)

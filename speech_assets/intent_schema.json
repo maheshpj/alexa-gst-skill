@@ -1,6 +1,9 @@
 {
   "intents": [
     {
+      "intent": "AboutIntent"
+    },
+    {
       "intent": "AMAZON.StopIntent"
     },
     {

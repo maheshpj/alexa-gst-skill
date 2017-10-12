@@ -1,0 +1,9 @@
+AboutIntent what is gst
+AboutIntent tell me about gst
+AboutIntent tell me something
+AboutIntent give me some information
+AboutIntent give me some gst information
+AboutIntent give me an idea
+AboutIntent what is that
+AboutIntent what can you tell me
+AboutIntent introduction

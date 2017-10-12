@@ -1,17 +1,8 @@
-welcome: |
-  gst.
-
-welcome_re: |
-  gst. How may I help you?
-
-welcome_card: |
-  gst is an Alexa skill written by Mahesh Jadhav. Goods and Services Tax in India
-
-stop_bye: |
-  Goodbye!
-
-cancel_bye: |
-  OK, goodbye!
-
-help_text: |
-  gst is an Alexa skill that does things. This is where the developer would normally explain how to do them.
+welcome: "welcome to gst!"
+welcome_re: "gst. How may I help you?"
+welcome_card: "gst is an Alexa skill written by Mahesh Jadhav. Goods and Services Tax in India"
+stop_bye: "Goodbye!"
+cancel_bye: "OK, goodbye!"
+help_text: "gst is an Alexa skill that does things. This is where the developer would normally explain how to do them."
+card_title: "GST"
+about: "gst is Goods and Services Tax in India. gst is an indirect tax which was introduced in India on 1 July 2017 and was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments."

@@ -1,5 +1,6 @@
 alabaster==0.7.9
 aniso8601==1.2.0
+awscli==1.11.169
 autodoc==0.3
 Babel==2.3.4
 beautifulsoup4==4.5.3
@@ -8,12 +9,12 @@ click==6.7
 cryptography==1.7.2
 decorator==4.0.11
 docutils==0.13.1
-Flask==0.12
-Flask-Ask==0.8.7
+Flask==0.12.2
+Flask-Ask==0.9.7
 idna==2.2
 imagesize==0.7.1
 itsdangerous==0.24
-Jinja2==2.9.5
+Jinja2==2.9.6
 MarkupSafe==0.23
 pyasn1==0.2.1
 pycparser==2.17

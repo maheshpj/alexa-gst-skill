@@ -3,18 +3,12 @@
         "apigateway_description": "API for Alexa GST Skill",
         "app_function": "alexa-gst-skill.app", 
         "aws_region": "us-east-1",
-        "profile_name": "default",
-        "manage_roles": false,
         "project_name": "alexa-gst-skill", 
         "runtime": "python2.7", 
         "s3_bucket": "zappa-alexa-gst-skill",
         "exclude": ["*.gz", "*.rar", ".tox",
                     ".cache", "build", "htmlcov",
                     "tests", "env", "egg-info" ],
-        "vpc_config": {
-            "SubnetIds": [ "" ],
-            "SecurityGroupIds": [ "" ]
-        },
         "timeout_seconds": 60
     }
 }
