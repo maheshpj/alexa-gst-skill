@@ -8,9 +8,11 @@
 import csv
 import logging
 import os
+import re
 from datetime import datetime
 from random import randint
 
+import requests
 from flask import Flask, render_template
 from flask_ask import Ask, question, statement
 
@@ -115,6 +117,41 @@ def handle_rate(item):
         return unknown_item_reprompt()
 
 
+@ask.intent('NewsIntent')
+def handle_news():
+    """
+    (STATEMENT) Handles the 'news' custom intention.
+    This intent will provide user the latest news on GST from RSS feed from times of india
+    """
+    card_title = render_template('card_title')
+    try:
+        rss = requests.get('https://timesofindia.indiatimes.com/rssfeeds/1898055.cms?feedtype=sjson')
+    except Exception as e:
+        logging.error('Failed getting RSS feed')
+        return error_prompt()
+
+    if rss is not None:
+        try:
+            json = rss.json()
+
+            gst_news = []
+            for i in json['channel']['item']:
+                if re.search('gst', i['title'], re.IGNORECASE):
+                    gst_news.append(i['title'])
+
+            if gst_news:
+                news_text = render_template('gst_news', news=str('; '.join(gst_news)))
+            else:
+                news_text = render_template('no_gst_news')
+        except Exception as e:
+            logging.error('Failed parsing RSS feed')
+            return error_prompt()
+
+        return statement(news_text).simple_card(card_title, news_text)
+    else:
+        return error_prompt()
+
+
 def unknown_item_reprompt():
     """
     (Question) handles the unknown gst item reprompt 
@@ -122,6 +159,16 @@ def unknown_item_reprompt():
     """
     card_title = render_template('card_title')
     question_text = render_template('unknown_item_reprompt')
+    return question(question_text).reprompt(question_text).simple_card(card_title, question_text)
+
+
+def error_prompt():
+    """
+    (Question) handles if there is any error 
+    :return: response error
+    """
+    card_title = render_template('card_title')
+    question_text = render_template('error_prompt')
     return question(question_text).reprompt(question_text).simple_card(card_title, question_text)
 
 

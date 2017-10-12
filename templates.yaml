@@ -59,3 +59,9 @@ gst_rate: GST rate for {{ item }} is {{ rate }}
 unknown_item_reprompt: |
   I'm not sure what your item is. You can tell me your item for which you want GST rate, by saying,
   what is the rate for milk?
+
+gst_news: Latest news on GST are {{ news }}
+
+no_gst_news: It seems there are no latest GST news!
+
+error_prompt: I am sorry, something went wrong. Please try again!

@@ -44,3 +44,11 @@ RateIntent {Item} gst tax
 RateIntent find the {Item} gst rate
 RateIntent find the {Item} gst slab
 RateIntent find the {Item} gst tax
+NewsIntent what is the news on gst
+NewsIntent whats the news on gst
+NewsIntent what is the latest news on gst
+NewsIntent whats the latest news on gst
+NewsIntent give me the latest news on gst
+NewsIntent tell me the latest news on gst
+NewsIntent news on gst
+NewsIntent is there any latest news on gst
