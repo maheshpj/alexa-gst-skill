@@ -1,9 +1,22 @@
 AboutIntent what is gst
 AboutIntent tell me about gst
-AboutIntent tell me something
-AboutIntent give me some information
-AboutIntent give me some gst information
 AboutIntent give me an idea
 AboutIntent what is that
 AboutIntent what can you tell me
 AboutIntent introduction
+AboutIntent what is the definition
+AboutIntent definition of gst
+FactIntent a fact
+FactIntent a gst fact
+FactIntent tell me a fact
+FactIntent tell me a gst fact
+FactIntent give me a fact
+FactIntent give me a gst fact
+FactIntent tell me trivia
+FactIntent tell me a gst trivia
+FactIntent give me trivia
+FactIntent give me a gst trivia
+FactIntent give me some information
+FactIntent give me some gst information
+FactIntent tell me something
+FactIntent give me something

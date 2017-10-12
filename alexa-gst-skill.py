@@ -8,6 +8,7 @@
 import logging
 import os
 from datetime import datetime
+from random import randint
 
 from flask import Flask, render_template
 from flask_ask import Ask, question, statement
@@ -63,7 +64,7 @@ def handle_launch():
 
 # Custom intents
 #
-# These intents are custom intents.
+# These intents are custom intents. We need to define utterances for custom intents.
 
 @ask.intent('AboutIntent')
 def handle_about():
@@ -73,6 +74,18 @@ def handle_about():
     about_text = render_template('about')
     card_title = render_template('card_title')
     return statement(about_text).simple_card(card_title, about_text)
+
+
+@ask.intent('FactIntent')
+def handle_fact():
+    """
+    (STATEMENT) Handles the 'fact' custom intention.
+    """
+    num_facts = 10  # increment this when adding a new fact template
+    fact_index = randint(0, num_facts - 1)
+    fact_text = render_template('gst_fact_{}'.format(fact_index))
+    card_title = render_template('card_title')
+    return statement(fact_text).simple_card(card_title, fact_text)
 
 
 # Built-in intents

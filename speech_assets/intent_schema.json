@@ -4,6 +4,9 @@
       "intent": "AboutIntent"
     },
     {
+      "intent": "FactIntent"
+    },
+    {
       "intent": "AMAZON.StopIntent"
     },
     {

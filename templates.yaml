@@ -1,8 +1,55 @@
-welcome: "welcome to gst!"
-welcome_re: "gst. How may I help you?"
-welcome_card: "gst is an Alexa skill written by Mahesh Jadhav. Goods and Services Tax in India"
-stop_bye: "Goodbye!"
-cancel_bye: "OK, goodbye!"
-help_text: "gst is an Alexa skill that does things. This is where the developer would normally explain how to do them."
-card_title: "GST"
-about: "gst is Goods and Services Tax in India. gst is an indirect tax which was introduced in India on 1 July 2017 and was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments."
+welcome: welcome to gst!
+
+welcome_re: gst. How may I help you?
+
+welcome_card: gst is an Alexa skill written by Mahesh Jadhav. Goods and Services Tax in India
+
+stop_bye: Goodbye!
+
+cancel_bye: OK, goodbye!
+
+help_text: gst is an Alexa skill that does things. This is where the developer would normally explain how to do them.
+
+card_title: GST
+
+about: |
+  gst is Goods and Services Tax in India. gst is an indirect tax which was introduced in India on 1 July 2017 and
+  was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments.
+
+gst_fact_0: |
+  The GST Council in India has proposed a four-tier rate structure with two standard rates – 12% and 18%, a lower
+  rate of 5% for the essentials and a higher rate of 28% for the luxury goods and sin goods
+
+gst_fact_1: |
+  GST will ensure seamless flow of credit across the supply chain, thus overcoming the inflationary effects of
+  cascading of taxes.
+
+gst_fact_2: |
+  The GST is a Value added Tax (VAT) is proposed to be a comprehensive indirect tax levy on manufacture, sale and
+  consumption of goods as well as services at the national level
+
+gst_fact_3: |
+  GST is being introduced in the country after a 13 year long journey since it was first discussed in the report of
+  the Kelkar Task Force on indirect taxes
+
+gst_fact_4: |
+  Keeping in mind the federal structure of India, there will be two components of GST – Central GST (CGST) and
+  State GST (SGST)
+
+gst_fact_5: |
+  GSTN is working on developing a state-of-the-art comprehensive IT infrastructure including the common GST portal
+  providing frontend services of registration, returns and payments to all taxpayers, as well as the backend IT modules
+  for certain States that include processing of returns, registrations, audits, assessments, appeals, etc
+
+gst_fact_6: |
+  GST would make doing business in the country tax neutral, irrespective of the choice of place of doing business
+
+gst_fact_7: |
+  The Constitution of India has been amended to insert articles empowering the government of India to levy GST.
+
+gst_fact_8: |
+  Goods and Services Tax (GST) is an indirect tax which was introduced in India on 1 July 2017 and was applicable
+  throughout India which replaced multiple cascading taxes levied by the central and state governments.
+
+gst_fact_9: |
+  Under GST, goods and services are taxed at the following rates, 0%, 5%, 12% ,18% and 28%
