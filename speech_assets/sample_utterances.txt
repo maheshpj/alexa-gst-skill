@@ -20,28 +20,27 @@ FactIntent give me some information
 FactIntent give me some gst information
 FactIntent tell me something
 FactIntent give me something
-RateIntent what is the rate for {Item}
-RateIntent what is the tax for {Item}
-RateIntent what is the slab for {Item}
-RateIntent what is the {Items}'s rate
-RateIntent what is the {Items}'s slab
-RateIntent what is the {Items}'s tax
-RateIntent what's the rate for {Item}
-RateIntent what's the tax for {Item}
-RateIntent what's the slab for {Item}
-RateIntent what's the {Items}'s rate
-RateIntent what's the {Items}'s slab
-RateIntent what's the {Items}'s tax
-RateIntent tell me the {Items}'s rate
-RateIntent tell me the {Items}'s slab
-RateIntent tell me the {Items}'s tax
-RateIntent rate for the {Item}
-RateIntent slab for the {Item}
-RateIntent tax for the {Item}
-RateIntent {Item}'s rate
-RateIntent {Item}'s slab
-RateIntent {Item}'s tax
-RateIntent find the {Item}'s rate
-RateIntent find the {Item}'s slab
-RateIntent find the {Item}'s tax
-
+RateIntent what is the gst rate for {Item}
+RateIntent what is the gst tax for {Item}
+RateIntent what is the gst slab for {Item}
+RateIntent what is the {Item} gst rate
+RateIntent what is the {Item} gst slab
+RateIntent what is the {Item} gst tax
+RateIntent whats the gst rate for {Item}
+RateIntent whats the gst tax for {Item}
+RateIntent whats the gst slab for {Item}
+RateIntent whats the {Item} gst rate
+RateIntent whats the {Item} gst slab
+RateIntent whats the {Item} gst tax
+RateIntent tell me the {Item} gst rate
+RateIntent tell me the {Item} gst slab
+RateIntent tell me the {Item} gst tax
+RateIntent gst rate for the {Item}
+RateIntent gst slab for the {Item}
+RateIntent gst tax for the {Item}
+RateIntent {Item} gst rate
+RateIntent {Item} gst slab
+RateIntent {Item} gst tax
+RateIntent find the {Item} gst rate
+RateIntent find the {Item} gst slab
+RateIntent find the {Item} gst tax

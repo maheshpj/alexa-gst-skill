@@ -5,11 +5,12 @@
 #
 # Goods and Services Tax in India
 
+import csv
 import logging
 import os
 from datetime import datetime
 from random import randint
-import csv
+
 from flask import Flask, render_template
 from flask_ask import Ask, question, statement
 
@@ -26,6 +27,7 @@ with open('gst-rates.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         gst_rates_dict[row['item']] = row['rate']
+
 
 # Session starter
 #
@@ -100,13 +102,27 @@ def handle_rate(item):
     (STATEMENT) Handles the 'rate' or 'slab' or 'tax' custom intention.
     """
     card_title = render_template('card_title')
-    rate = gst_rates_dict[item]
+    try:
+        rate = gst_rates_dict[item]
+    except Exception as e:
+        logging.error('Failed getting rate for item {}'.format(item))
+        return unknown_item_reprompt()
+
     if rate is not None:
         rate_text = render_template('gst_rate', item=item, rate=rate)
         return statement(rate_text).simple_card(card_title, rate_text)
     else:
-        question_text = render_template('unknown_item_reprompt')
-        return question(question_text).reprompt(question_text).simple_card(card_title, question_text)
+        return unknown_item_reprompt()
+
+
+def unknown_item_reprompt():
+    """
+    (Question) handles the unknown gst item reprompt 
+    :return: response unknown item prompt
+    """
+    card_title = render_template('card_title')
+    question_text = render_template('unknown_item_reprompt')
+    return question(question_text).reprompt(question_text).simple_card(card_title, question_text)
 
 
 # Built-in intents
