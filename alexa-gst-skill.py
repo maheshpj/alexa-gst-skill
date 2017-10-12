@@ -66,7 +66,7 @@ def handle_launch():
 # These intents are custom intents.
 
 @ask.intent('AboutIntent')
-def about():
+def handle_about():
     """
     (STATEMENT) Handles the 'about' custom intention.
     """
