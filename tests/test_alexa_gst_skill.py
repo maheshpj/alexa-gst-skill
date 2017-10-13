@@ -61,8 +61,15 @@ project_root = os.path.abspath(os.path.join(flask_ask.__file__, '../..'))
 
 class SmokeTestGSTSkill(unittest.TestCase):
     def test_gst_rates(self):
-        """ Test the GST rates for items """
-        self.assertIsNotNone(gst.gst_rates_dict)
+        """ 
+        Test the GST rates for items 
+        
+        Examples:
+            * Given Milk as item test should return 'Milk GST rate should be 0%'
+            * Given Coal as item test should return 'Coal GST rate should be 5%'
+        """
+        gst.init()
+        self.assertNotEqual(gst.gst_rates_dict, {})
         rate = gst.gst_rates_dict['milk']
         self.assertEqual('0%', rate, "Milk GST rate should be 0%")
         rate = gst.gst_rates_dict['coal']
@@ -73,7 +80,11 @@ class SmokeTestGSTSkill(unittest.TestCase):
         self.assertEqual('28%', rate, "Cars GST rate should be 28%")
 
     def test_news(self):
-        """ Test the GST news """
+        """ 
+        Test the GST news 
+        
+        Provide RSS JSON feed to the test and test should return only GST related news
+        """
         expected_news = 'September inflation may hit six- month high on GST and public sector pay rise; ' \
                         'Reduced GST on yarn to help textile sector: Exporter body; ' \
                         'Import of oil-drilling rigs kept out of GST purview'
@@ -85,10 +96,14 @@ class SmokeTestGSTSkill(unittest.TestCase):
         self.assertEqual(actual_news, expected_news, 'Actual news should be same as expected news')
 
     def test_news_error(self):
-        """ Test the GST news error when RSS feed is invalid"""
+        """ 
+        Test the GST news error when RSS feed is invalid
+        
+        Should get 'Failed parsing RSS feed' error if news in invalid
+        """
         with self.assertRaises(Exception) as e:
             gst.get_gst_news({})
-        self.assertEqual('Failed parsing RSS feed', str(e.exception))
+        self.assertEqual('Failed parsing RSS feed', str(e.exception), "Should get parsing failed error")
 
 
 @unittest.skipIf(six.PY2, "Not yet supported on Python 2.x")
@@ -133,7 +148,7 @@ class SmokeTestGSTSkillPy3(unittest.TestCase):
                       self.process.pid)
 
     def test_gst_skill(self):
-        """ Test the GST skill service """
+        """ Test the Alexa GST skill service """
         self._launch('alexa_gst_skill.py')
         response = self._post(data=launch)
         self.assertIsNotNone(self._get_text(response))

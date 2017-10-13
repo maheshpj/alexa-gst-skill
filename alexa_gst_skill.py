@@ -1,6 +1,6 @@
 # coding=utf-8
 
-# gst
+# alexa_gst_skill.py
 # By Mahesh Jadhav <mahesh.jadhav@capgemini.com>
 #
 # Goods and Services Tax in India
@@ -25,10 +25,19 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 # Read GST Rates from gst-rates.csv file for all items
 gst_rates_dict = {}
-with open('gst-rates.csv') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        gst_rates_dict[row['\xef\xbb\xbfitem']] = row['rate']
+
+
+def init():
+    """
+    Initialize state attributes at the session start
+    
+    Returns: None
+    """
+    gst_rates_dict.clear()
+    with open('gst-rates.csv') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            gst_rates_dict[row['\xef\xbb\xbfitem']] = row['rate']
 
 
 # Session starter
@@ -43,6 +52,7 @@ def start_session():
     Fired at the start of the session, this is a great place to initialise state variables and the like.
     """
     logging.debug("Session started at {}".format(datetime.now().isoformat()))
+    init()
 
 
 # Launch intent
@@ -57,11 +67,11 @@ def handle_launch():
     """
     (QUESTION) Responds to the launch of the Skill with a welcome statement and a card.
 
-    Templates:
-    * Initial statement: 'welcome'
-    * Reprompt statement: 'welcome_re'
-    * Card title: 'gst'
-    * Card body: 'welcome_card'
+    Templates:    
+        * Initial statement: 'welcome'    
+        * Reprompt statement: 'welcome_re'    
+        * Card title: 'gst'    
+        * Card body: 'welcome_card'    
     """
 
     welcome_text = render_template('welcome')
@@ -80,6 +90,15 @@ def handle_launch():
 def handle_about():
     """
     (STATEMENT) Handles the 'about' custom intention.
+    
+    This intent will handle all statements related to information about GST
+    
+    Examples:
+        * What is gst
+        * Tell me about gst
+        
+    Returns:
+        About text statement
     """
     about_text = render_template('about')
     card_title = render_template('card_title')
@@ -90,6 +109,15 @@ def handle_about():
 def handle_fact():
     """
     (STATEMENT) Handles the 'fact' custom intention.
+    
+    This intent handles all facts or trivia related statements
+    
+    Examples:
+        * Tell me a gst fact
+        * Give me some gst information
+        
+    Returns:
+        Facts text statements
     """
     num_facts = 10  # increment this when adding a new fact template
     fact_index = randint(0, num_facts - 1)
@@ -102,6 +130,16 @@ def handle_fact():
 def handle_rate(item):
     """
     (STATEMENT) Handles the 'rate' or 'slab' or 'tax' custom intention.
+    
+    This intent handles all GST Rate related questions
+    
+    Examples:
+        * what is the mobile gst rate
+        * GST tax for the milk
+                
+    Returns:
+        GST Rate text statement if item exists
+        Unknown GST Item statement if item does not exists
     """
     card_title = render_template('card_title')
     try:
@@ -121,7 +159,17 @@ def handle_rate(item):
 def handle_news():
     """
     (STATEMENT) Handles the 'news' custom intention.
+    
     This intent will provide user the latest news on GST from RSS feed from times of india
+    
+    Examples:
+        * whats the news on gst
+        * News on gst
+        
+    Returns:
+        News statements if GST news found from RSS
+        No GST news statement if GST news not found from RSS 
+        Error statement if can not process the request
     """
     card_title = render_template('card_title')
     try:
@@ -138,6 +186,16 @@ def handle_news():
 
 
 def get_gst_feed():
+    """Gets RSS feed
+    
+    Get the RSS Feed in json format from Times of India including GST news
+    
+    Returns: 
+        RSS feed in json format
+        
+    Raises:
+        Exception: An error occurred while getting the RSS feed
+    """
     rss_json = None
     try:
         rss = requests.get('https://timesofindia.indiatimes.com/rssfeeds/1898055.cms?feedtype=sjson')
@@ -152,6 +210,19 @@ def get_gst_feed():
 
 
 def get_gst_news(rss_json):
+    """Filters GST news from RSS feed
+    
+    Filters the RSS feed for GST news and create a string
+    
+    Args:
+        rss_json: RSS feed in json format
+        
+    Returns: 
+        GST news separated by ';'
+        
+    Raises:
+        Exception: An error occurred while parsing the RSS feed
+    """
     gst_news = []
     if rss_json is not None:
         try:
@@ -168,7 +239,9 @@ def get_gst_news(rss_json):
 def unknown_item_reprompt():
     """
     (Question) handles the unknown gst item reprompt 
-    :return: response unknown item prompt
+    
+    Returns: 
+        response unknown item prompt
     """
     card_title = render_template('card_title')
     question_text = render_template('unknown_item_reprompt')
@@ -178,7 +251,9 @@ def unknown_item_reprompt():
 def error_prompt():
     """
     (Question) handles if there is any error 
-    :return: response error
+    
+    Returns: 
+        response error
     """
     card_title = render_template('card_title')
     question_text = render_template('error_prompt')
