@@ -6,31 +6,31 @@ Subpackages
 
 .. toctree::
 
-    alexa-gst-skill.tests
+    tests
 
 Submodules
 ----------
 
-alexa\-gst\-skill\.alexa\_gst\_skill module
+alexa\_gst\_skill module
 -------------------------------------------
 
-.. automodule:: alexa-gst-skill.alexa_gst_skill
+.. automodule:: alexa_gst_skill
     :members:
     :undoc-members:
     :show-inheritance:
 
-alexa\-gst\-skill\.runserver module
+runserver module
 -----------------------------------
 
-.. automodule:: alexa-gst-skill.runserver
+.. automodule:: runserver
     :members:
     :undoc-members:
     :show-inheritance:
 
-alexa\-gst\-skill\.setup module
+setup module
 -------------------------------
 
-.. automodule:: alexa-gst-skill.setup
+.. automodule:: setup
     :members:
     :undoc-members:
     :show-inheritance:

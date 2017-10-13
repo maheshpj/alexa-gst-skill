@@ -1,13 +1,13 @@
-alexa\-gst\-skill\.tests package
+tests package
 ================================
 
 Submodules
 ----------
 
-alexa\-gst\-skill\.tests\.test\_alexa\_gst\_skill module
+tests\.test\_alexa\_gst\_skill module
 --------------------------------------------------------
 
-.. automodule:: alexa-gst-skill.tests.test_alexa_gst_skill
+.. automodule:: tests.test_alexa_gst_skill
     :members:
     :undoc-members:
     :show-inheritance:
@@ -16,7 +16,7 @@ alexa\-gst\-skill\.tests\.test\_alexa\_gst\_skill module
 Module contents
 ---------------
 
-.. automodule:: alexa-gst-skill.tests
+.. automodule:: tests
     :members:
     :undoc-members:
     :show-inheritance:
