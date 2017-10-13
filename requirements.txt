@@ -12,6 +12,7 @@ decorator==4.0.11
 docutils==0.13.1
 Flask==0.12.2
 Flask-Ask==0.9.7
+Flask-Testing==0.6.2
 idna==2.2
 imagesize==0.7.1
 itsdangerous==0.24
@@ -22,6 +23,8 @@ pycparser==2.17
 Pygments==2.2.0
 pyOpenSSL==16.2.0
 python-dateutil==2.6.1
+pytest==3.0.7
+pytest-cov==2.5.1
 pytz==2016.10
 PyYAML==3.12
 requests==2.13.0
@@ -30,6 +33,7 @@ snowballstemmer==1.2.1
 Sphinx==1.5.2
 sphinx-autodoc-typehints==1.1.0
 sphinx-rtd-theme==0.1.9
+tox==2.7.0
 waitress==1.0.2
 WebOb==1.7.1
 WebTest==2.0.25
