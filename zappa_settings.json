@@ -1,7 +1,7 @@
 {
     "dev": {
         "apigateway_description": "API for Alexa GST Skill",
-        "app_function": "alexa-gst-skill.app", 
+        "app_function": "alexa_gst_skill.app",
         "aws_region": "us-east-1",
         "project_name": "alexa-gst-skill", 
         "runtime": "python2.7", 
