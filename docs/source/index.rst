@@ -10,6 +10,7 @@ Welcome to Alexa GST Skill Service's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   includeme
    alexa-gst-skill
    alexa-gst-skill.tests
         
