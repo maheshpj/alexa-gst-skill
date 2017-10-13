@@ -146,7 +146,7 @@ def get_gst_feed():
             rss_json = rss.json()
     except Exception as e:
         logging.error('Failed getting RSS feed')
-        raise e
+        raise Exception('Failed getting RSS feed')
 
     return rss_json
 
@@ -160,7 +160,7 @@ def get_gst_news(rss_json):
                     gst_news.append(i['title'])
         except Exception as e:
             logging.error('Failed parsing RSS feed')
-            return e
+            raise Exception('Failed parsing RSS feed')
 
     return str('; '.join(gst_news))
 

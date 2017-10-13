@@ -73,7 +73,7 @@ class SmokeTestGSTSkill(unittest.TestCase):
         self.assertEqual('28%', rate, "Cars GST rate should be 28%")
 
     def test_news(self):
-        """ Test the GST rates for items """
+        """ Test the GST news """
         expected_news = 'September inflation may hit six- month high on GST and public sector pay rise; ' \
                         'Reduced GST on yarn to help textile sector: Exporter body; ' \
                         'Import of oil-drilling rigs kept out of GST purview'
@@ -83,6 +83,12 @@ class SmokeTestGSTSkill(unittest.TestCase):
         actual_news = gst.get_gst_news(rss)
         self.assertIsNotNone(actual_news)
         self.assertEqual(actual_news, expected_news, 'Actual news should be same as expected news')
+
+    def test_news_error(self):
+        """ Test the GST news error when RSS feed is invalid"""
+        with self.assertRaises(Exception) as e:
+            gst.get_gst_news({})
+        self.assertEqual('Failed parsing RSS feed', str(e.exception))
 
 
 @unittest.skipIf(six.PY2, "Not yet supported on Python 2.x")
