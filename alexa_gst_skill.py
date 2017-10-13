@@ -125,31 +125,44 @@ def handle_news():
     """
     card_title = render_template('card_title')
     try:
+        rss_json = get_gst_feed()
+        if rss_json:
+            news = get_gst_news(rss_json)
+            news_text = render_template('gst_news', news=news)
+        else:
+            news_text = render_template('no_gst_news')
+    except Exception as e:
+        return error_prompt()
+
+    return statement(news_text).simple_card(card_title, news_text)
+
+
+def get_gst_feed():
+    rss_json = None
+    try:
         rss = requests.get('https://timesofindia.indiatimes.com/rssfeeds/1898055.cms?feedtype=sjson')
+
+        if rss is not None:
+            rss_json = rss.json()
     except Exception as e:
         logging.error('Failed getting RSS feed')
-        return error_prompt()
+        raise e
 
-    if rss is not None:
+    return rss_json
+
+
+def get_gst_news(rss_json):
+    gst_news = []
+    if rss_json is not None:
         try:
-            json = rss.json()
-
-            gst_news = []
-            for i in json['channel']['item']:
+            for i in rss_json['channel']['item']:
                 if re.search('gst', i['title'], re.IGNORECASE):
                     gst_news.append(i['title'])
-
-            if gst_news:
-                news_text = render_template('gst_news', news=str('; '.join(gst_news)))
-            else:
-                news_text = render_template('no_gst_news')
         except Exception as e:
             logging.error('Failed parsing RSS feed')
-            return error_prompt()
+            return e
 
-        return statement(news_text).simple_card(card_title, news_text)
-    else:
-        return error_prompt()
+    return str('; '.join(gst_news))
 
 
 def unknown_item_reprompt():

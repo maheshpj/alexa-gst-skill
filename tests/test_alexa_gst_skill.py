@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 import sys
@@ -7,6 +8,8 @@ import unittest
 import flask_ask
 import six
 from requests import post
+
+import alexa_gst_skill as gst
 
 launch = {
     "version": "1.0",
@@ -56,8 +59,34 @@ launch = {
 project_root = os.path.abspath(os.path.join(flask_ask.__file__, '../..'))
 
 
-@unittest.skipIf(six.PY2, "Not yet supported on Python 2.x")
 class SmokeTestGSTSkill(unittest.TestCase):
+    def test_gst_rates(self):
+        """ Test the GST rates for items """
+        self.assertIsNotNone(gst.gst_rates_dict)
+        rate = gst.gst_rates_dict['milk']
+        self.assertEqual('0%', rate, "Milk GST rate should be 0%")
+        rate = gst.gst_rates_dict['coal']
+        self.assertEqual('5%', rate, "Coal GST rate should be 5%")
+        rate = gst.gst_rates_dict['mobile']
+        self.assertEqual('12%', rate, "Mobile GST rate should be 12%")
+        rate = gst.gst_rates_dict['cars']
+        self.assertEqual('28%', rate, "Cars GST rate should be 28%")
+
+    def test_news(self):
+        """ Test the GST rates for items """
+        expected_news = 'September inflation may hit six- month high on GST and public sector pay rise; ' \
+                        'Reduced GST on yarn to help textile sector: Exporter body; ' \
+                        'Import of oil-drilling rigs kept out of GST purview'
+
+        with open('rss.json', 'r') as f:
+            rss = json.load(f)
+        actual_news = gst.get_gst_news(rss)
+        self.assertIsNotNone(actual_news)
+        self.assertEqual(actual_news, expected_news, 'Actual news should be same as expected news')
+
+
+@unittest.skipIf(six.PY2, "Not yet supported on Python 2.x")
+class SmokeTestGSTSkillPy3(unittest.TestCase):
     def setUp(self):
         self.python = sys.executable
         self.env = {'PYTHONPATH': project_root,
@@ -101,4 +130,4 @@ class SmokeTestGSTSkill(unittest.TestCase):
         """ Test the GST skill service """
         self._launch('alexa_gst_skill.py')
         response = self._post(data=launch)
-        self.assertTrue('hello' in self._get_text(response))
+        self.assertIsNotNone(self._get_text(response))

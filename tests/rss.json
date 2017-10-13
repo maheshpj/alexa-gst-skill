@@ -1,0 +1,115 @@
+{
+	"@xmlns:atom": "http://www.w3.org/2005/Atom",
+	"@version": "2.0",
+	"channel": {
+		"title": "Business News: Latest News on Business, Stock Markets, Financial News, India Business & World Business News",
+		"link": "https://timesofindia.indiatimes.com/articlelist/1898055.cms",
+		"description": "Check latest updates on business, finance and economy from across the world. Get daily updates for BSE Sensex, Share price, Stock markets, BSE, NSE, Nifty, business news on various sectors and much more from Times of India Business.",
+		"language": "en-gb",
+		"lastBuildDate": "Fri, 13 Oct 2017 10:36:05 GMT",
+		"atom:link": {
+			"@xmlns:atom": "http://www.w3.org/2005/Atom",
+			"@type": "application/rss+xml",
+			"@rel": "self",
+			"@href": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms"
+		},
+		"copyright": "Copyright:(C) 2017 Bennett Coleman & Co. Ltd, http://in.indiatimes.com/policyterms/1554651.cms",
+		"docs": "http://syndication.indiatimes.com/",
+		"image": {
+			"title": "Business News: Latest News on Business, Stock Markets, Financial News, India Business & World Business News",
+			"url": "https://timesofindia.indiatimes.com/photo/507610.cms",
+			"link": "https://timesofindia.indiatimes.com/articlelist/1898055.cms"
+		},
+		"item": [{
+			"title": "Human touch important in banking: Arundhati Bhattacharya",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/human-touch-important-in-banking-arundhati-bhattacharya/articleshow/61064268.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61064268.cms\" /><\/a>Maybe we have not performed as well as we needed to perform, says outgoing SBI chairman.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/human-touch-important-in-banking-arundhati-bhattacharya/articleshow/61064268.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/human-touch-important-in-banking-arundhati-bhattacharya/articleshow/61064268.cms",
+			"pubDate": "Fri, 13 Oct 2017 06:38:22 GMT"
+		},
+		{
+			"title": "TCS Q2 net profit rises 8.4% on year to Rs 6,446 crore",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/tcs-q2-net-profit-rises-8-4-on-year-to-rs-6446-crore/articleshow/61053009.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61053009.cms\" /><\/a>",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/tcs-q2-net-profit-rises-8-4-on-year-to-rs-6446-crore/articleshow/61053009.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/tcs-q2-net-profit-rises-8-4-on-year-to-rs-6446-crore/articleshow/61053009.cms",
+			"pubDate": "Thu, 12 Oct 2017 11:44:22 GMT"
+		},
+		{
+			"title": "Working on plan to rebuild capacity of banking sector: Arun Jaitley",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/working-on-plan-to-rebuild-capacity-of-banking-sector-arun-jaitley/articleshow/61051379.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61051379.cms\" /><\/a>Jaitley, who is on a week-long visit to the US to attend the annual meetings of the International Monetary Fund and the World Bank, also said that reforming the banking system is the top agenda of the government.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/working-on-plan-to-rebuild-capacity-of-banking-sector-arun-jaitley/articleshow/61051379.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/working-on-plan-to-rebuild-capacity-of-banking-sector-arun-jaitley/articleshow/61051379.cms",
+			"pubDate": "Thu, 12 Oct 2017 09:46:10 GMT"
+		},
+		{
+			"title": "BPM industry sees huge opportunity in new digital tech",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/bpm-industry-sees-huge-opportunity-in-new-digital-tech/articleshow/61063748.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61063748.cms\" /><\/a>",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/bpm-industry-sees-huge-opportunity-in-new-digital-tech/articleshow/61063748.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/bpm-industry-sees-huge-opportunity-in-new-digital-tech/articleshow/61063748.cms",
+			"pubDate": "Fri, 13 Oct 2017 05:58:29 GMT"
+		},
+		{
+			"title": "Bharti Airtel to acquire Tata Teleservices",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/bharti-airtel-to-acquire-tatas-consumer-mobile-business/articleshow/61052555.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61052555.cms\" /><\/a>The country's top telecommunication carrier Bharti Airtel will acquire the consumer mobile business of Tata Teleservices and Tata Teleservices (Maharashtra) Ltd, the companies said on Thursday.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/bharti-airtel-to-acquire-tatas-consumer-mobile-business/articleshow/61052555.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/bharti-airtel-to-acquire-tatas-consumer-mobile-business/articleshow/61052555.cms",
+			"pubDate": "Thu, 12 Oct 2017 11:01:41 GMT"
+		},
+		{
+			"title": "Indian startups are not disruptive enough compared to global companies: Ratan Tata",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/indian-startups-are-not-disruptive-enough-compared-to-global-companies-ratan-tata/articleshow/61048170.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61048170.cms\" /><\/a>Ratan Tata believes the reason behind domestic startups are lagging is not so much talent crunch as is the lack of an encouraging ecosystem in the country.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/indian-startups-are-not-disruptive-enough-compared-to-global-companies-ratan-tata/articleshow/61048170.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/indian-startups-are-not-disruptive-enough-compared-to-global-companies-ratan-tata/articleshow/61048170.cms",
+			"pubDate": "Thu, 12 Oct 2017 05:59:39 GMT"
+		},
+		{
+			"title": "September inflation may hit six- month high on GST and public sector pay rise",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/september-inflation-may-hit-six-month-high-on-gst-and-public-sector-pay-rise/articleshow/61047235.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61047235.cms\" /><\/a>A recent hike in house rent allowances for government employees, coupled with staggered price hikes by firms adjusting to the Goods and Services Tax (GST), contributed to price rises, said Sonal Varma, chief India economist at Nomura.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/september-inflation-may-hit-six-month-high-on-gst-and-public-sector-pay-rise/articleshow/61047235.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/september-inflation-may-hit-six-month-high-on-gst-and-public-sector-pay-rise/articleshow/61047235.cms",
+			"pubDate": "Thu, 12 Oct 2017 04:40:34 GMT"
+		},
+		{
+			"title": "Reduced GST on yarn to help textile sector: Exporter body",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/reduced-gst-on-yarn-to-help-textile-sector-exporter-body/articleshow/61051973.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61051973.cms\" /><\/a>",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/reduced-gst-on-yarn-to-help-textile-sector-exporter-body/articleshow/61051973.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/reduced-gst-on-yarn-to-help-textile-sector-exporter-body/articleshow/61051973.cms",
+			"pubDate": "Thu, 12 Oct 2017 10:27:23 GMT"
+		},
+		{
+			"title": "IMF sounds alert over debt in largest economies",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/international-business/imf-sounds-alert-over-debt-in-largest-economies/articleshow/61048078.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61048078.cms\" /><\/a>Introducing the IMF's newest assessment of risk in the world's financial system, it was noted that the extremely low interest rates of the past several years have allowed countries to borrow easily to finance their rebound from recessions.",
+			"link": "https://timesofindia.indiatimes.com/business/international-business/imf-sounds-alert-over-debt-in-largest-economies/articleshow/61048078.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/international-business/imf-sounds-alert-over-debt-in-largest-economies/articleshow/61048078.cms",
+			"pubDate": "Thu, 12 Oct 2017 05:52:53 GMT"
+		},
+		{
+			"title": "E-wallets get bigger platform, stiff norms",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/e-wallets-get-bigger-platform-stiff-norms/articleshow/61044374.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61044374.cms\" /><\/a>The Reserve Bank of India (RBI) has allowed KYC-compliant wallet accounts to send money to other wallets and bank accounts using the Unified Payment Interface — an account-to-account remittance platform.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/e-wallets-get-bigger-platform-stiff-norms/articleshow/61044374.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/e-wallets-get-bigger-platform-stiff-norms/articleshow/61044374.cms",
+			"pubDate": "Wed, 11 Oct 2017 22:30:00 GMT"
+		},
+		{
+			"title": "Sensex, Nifty open volatile ahead of inflation numbers",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/sensex-today-12-october-2017-sensex-nifty-open-volatile-ahead-of-inflation-numbers/articleshow/61046867.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61046867.cms\" /><\/a>BSE sensex gained 54.48 points to open on 31,887.47 while the broader 50-share NSE Nifty started trading on 10,011.20, up by 26.40 points. Analysts opine that the volatility in the market is in anticipation of the inflation numbers which are slated to be announced later in the day.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/sensex-today-12-october-2017-sensex-nifty-open-volatile-ahead-of-inflation-numbers/articleshow/61046867.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/sensex-today-12-october-2017-sensex-nifty-open-volatile-ahead-of-inflation-numbers/articleshow/61046867.cms",
+			"pubDate": "Thu, 12 Oct 2017 04:13:57 GMT"
+		},
+		{
+			"title": "Cabinet nod to major skill development schemes",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/cabinet-nod-to-major-skill-development-schemes/articleshow/61042519.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61042519.cms\" /><\/a>Giving a major push to the Skill India initiative, the Cabinet on Wednesday approved two schemes envisaging an investment of Rs 6,655 crore and gave nod to a proposal to send 3 lakh youth to Japan for on-job training.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/cabinet-nod-to-major-skill-development-schemes/articleshow/61042519.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/cabinet-nod-to-major-skill-development-schemes/articleshow/61042519.cms",
+			"pubDate": "Wed, 11 Oct 2017 17:29:51 GMT"
+		},
+		{
+			"title": "Import of oil-drilling rigs kept out of GST purview",
+			"description": "<a href=\"https://timesofindia.indiatimes.com/business/india-business/import-of-oil-drilling-rigs-kept-out-of-gst-purview/articleshow/61048214.cms\"><img border=\"0\" hspace=\"10\" align=\"left\" style=\"margin-top:3px;margin-right:5px;\" src=\"https://timesofindia.indiatimes.com/photo/61048214.cms\" /><\/a>Nearly all deep sea drilling rigs are imported, and a bulk of the ones used in shallow waters to drill wells to probe and produce oil and gas are also of foreign origin.",
+			"link": "https://timesofindia.indiatimes.com/business/india-business/import-of-oil-drilling-rigs-kept-out-of-gst-purview/articleshow/61048214.cms",
+			"guid": "https://timesofindia.indiatimes.com/business/india-business/import-of-oil-drilling-rigs-kept-out-of-gst-purview/articleshow/61048214.cms",
+			"pubDate": "Thu, 12 Oct 2017 06:02:44 GMT"
+		}]
+	}
+}
