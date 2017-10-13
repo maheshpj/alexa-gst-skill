@@ -1,9 +1,10 @@
 # Minimal makefile for Sphinx documentation
+#
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = alexa-gst-skill
+SPHINXBUILD   = python -msphinx
+SPHINXPROJ    = alexa_gst_skill
 SOURCEDIR     = source
 BUILDDIR      = build
 
