@@ -85,3 +85,4 @@ test_*.json
 test_*.xml
 
 .idea/
+junit-pytest.xml
