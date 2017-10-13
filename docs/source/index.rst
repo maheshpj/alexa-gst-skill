@@ -1,4 +1,4 @@
-Welcome to gst documentation!
+Welcome to GST Alexa Skill Service documentation!
 =======================================================
 
 .. toctree::
