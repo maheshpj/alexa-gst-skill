@@ -86,3 +86,4 @@ test_*.xml
 
 .idea/
 junit-pytest.xml
+pytestcov.xml
