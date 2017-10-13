@@ -10,7 +10,7 @@ Welcome to alexa_gst_skill's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   .
 
 Indices and tables
 ==================
