@@ -77,8 +77,8 @@ class SmokeTestGSTSkill(unittest.TestCase):
         expected_news = 'September inflation may hit six- month high on GST and public sector pay rise; ' \
                         'Reduced GST on yarn to help textile sector: Exporter body; ' \
                         'Import of oil-drilling rigs kept out of GST purview'
-
-        with open('rss.json', 'r') as f:
+        rss_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rss.json')
+        with open(rss_path, 'r') as f:
             rss = json.load(f)
         actual_news = gst.get_gst_news(rss)
         self.assertIsNotNone(actual_news)
