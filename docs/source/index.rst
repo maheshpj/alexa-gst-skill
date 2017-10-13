@@ -3,14 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to alexa_gst_skill's documentation!
-===========================================
+Welcome to Alexa GST Skill Service's documentation!
+===================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   .
+   alexa-gst-skill
+   alexa-gst-skill.tests
 
 Indices and tables
 ==================
