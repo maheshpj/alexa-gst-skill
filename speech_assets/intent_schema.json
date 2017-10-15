@@ -19,6 +19,12 @@
       ]
     },
     {
+        "intent": "YesIntent"
+    },
+    {
+        "intent": "NoIntent"
+    },
+    {
       "intent": "AMAZON.StopIntent"
     },
     {

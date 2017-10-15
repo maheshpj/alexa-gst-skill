@@ -6,13 +6,16 @@
 # Goods and Services Tax in India
 
 import csv
+import json
 import logging
 import os
 import re
+import time
 from datetime import datetime
 from random import randint
 
 import requests
+import unidecode
 from flask import Flask, render_template
 from flask_ask import Ask, question, statement
 
@@ -78,7 +81,7 @@ def handle_launch():
     welcome_re_text = render_template('welcome_re')
     welcome_card_text = render_template('welcome_card')
 
-    return question(welcome_text).reprompt(welcome_re_text).standard_card(title="gst",
+    return question(welcome_text).reprompt(welcome_re_text).standard_card(title="GST",
                                                                           text=welcome_card_text)
 
 
@@ -158,9 +161,10 @@ def handle_rate(item):
 @ask.intent('NewsIntent')
 def handle_news():
     """
-    (STATEMENT) Handles the 'news' custom intention.
+    (QUESTION) Handles the 'news' custom intention.
     
-    This intent will provide user the latest news on GST from RSS feed from times of india
+    This intent will provide user the latest news on GST from RSS feed from reddit and 
+    for failover times of india, and asks if user wants ti hear more news
     
     Examples:
         * whats the news on gst
@@ -172,8 +176,17 @@ def handle_news():
         Error statement if can not process the request
     """
     card_title = render_template('card_title')
+
     try:
-        rss_json = get_gst_feed()
+        news = get_reddit_headline()
+        if news:
+            news_text = render_template('gst_news', news=news)
+            return question(news_text).simple_card(card_title, news_text)
+    except Exception as e:
+        logging.error('Failed getting news from reddit')
+
+    try:
+        rss_json = get_rss_feed('https://timesofindia.indiatimes.com/rssfeeds/1898055.cms?feedtype=sjson')
         if rss_json:
             news = get_gst_news(rss_json)
             news_text = render_template('gst_news', news=news)
@@ -182,13 +195,29 @@ def handle_news():
     except Exception as e:
         return error_prompt()
 
-    return statement(news_text).simple_card(card_title, news_text)
+    return question(news_text).simple_card(card_title, news_text)
 
 
-def get_gst_feed():
+@ask.intent("YesIntent")
+def share_headlines():
+    headlines = handle_news()
+    return headlines
+
+
+@ask.intent("NoIntent")
+def no_intent():
+    bye_text = 'OK sure... bye'
+    return statement(bye_text)
+
+
+def get_rss_feed(url, is_verify=True):
     """Gets RSS feed
     
     Get the RSS Feed in json format from Times of India including GST news
+    
+    Args:
+        url: RSS feed url
+        is_verify: verify the SSL certificate authority or not
     
     Returns: 
         RSS feed in json format
@@ -198,7 +227,7 @@ def get_gst_feed():
     """
     rss_json = None
     try:
-        rss = requests.get('https://timesofindia.indiatimes.com/rssfeeds/1898055.cms?feedtype=sjson')
+        rss = requests.get(url, verify=is_verify)
 
         if rss is not None:
             rss_json = rss.json()
@@ -207,6 +236,34 @@ def get_gst_feed():
         raise Exception('Failed getting RSS feed')
 
     return rss_json
+
+
+def get_reddit_headline():
+    """
+    Gets the GST news headline from Reddit.
+    It fetches 10 news headlines regarding GST and picks one randomly
+    
+    Returns:
+         GST headline from Reddit
+    """
+    user_pass_dict = {'user': 'reddit_8765',
+                      'passwd': 'reddit_8765',
+                      'api_type': 'json'}
+    sess = requests.Session()
+    sess.headers.update({'User-Agent': 'Alexa: GST'})
+    sess.post('https://www.reddit.com/api/login', data=user_pass_dict, verify=False)
+
+    time.sleep(1)
+
+    url = 'https://www.reddit.com/r/indianews/search.json?limit=10&q=gst&restrict_sr=on'
+    rss_json = get_rss_feed(url, False)
+    titles = [str(i['data']['title']) for i in rss_json['data']['children']]
+
+    num_facts = 10
+    rand_index = randint(0, num_facts - 1)
+    title = titles[rand_index]
+
+    return title
 
 
 def get_gst_news(rss_json):

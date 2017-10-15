@@ -60,7 +60,7 @@ unknown_item_reprompt: |
   I'm not sure what your item is. You can tell me your item for which you want GST rate, by saying,
   what is the rate for milk?
 
-gst_news: Latest news on GST are {{ news }}
+gst_news: Latest news on GST are {{ news }}, would like to hear more news?
 
 no_gst_news: It seems there are no latest GST news!
 

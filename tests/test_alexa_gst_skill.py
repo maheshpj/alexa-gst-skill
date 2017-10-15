@@ -99,11 +99,19 @@ class SmokeTestGSTSkill(unittest.TestCase):
         """ 
         Test the GST news error when RSS feed is invalid
         
-        Should get 'Failed parsing RSS feed' error if news in invalid
+        Should get 'Failed parsig RSS feed' error if news in invalid
         """
         with self.assertRaises(Exception) as e:
             gst.get_gst_news({})
         self.assertEqual('Failed parsing RSS feed', str(e.exception), "Should get parsing failed error")
+
+    def test_reddit_headline(self):
+        """ 
+        Test the GST news from Reddit
+        This test may fail
+        """
+        headline = gst.get_reddit_headline()
+        self.assertIsNotNone(headline)
 
 
 @unittest.skipIf(six.PY2, "Not yet supported on Python 2.x")
