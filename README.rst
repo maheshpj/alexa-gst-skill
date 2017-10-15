@@ -15,7 +15,8 @@ what is the GST rate of Milk? etc.
 Architecture
 -------------
 
-.. image:: ../../images/alexa-gst-arch.png
+.. image:: /images/alexa-gst-arch.png
+    :alt: Alexa GST Skill Service Design
 
 Documentation
 -------------
