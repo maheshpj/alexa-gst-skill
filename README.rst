@@ -12,6 +12,11 @@ in Alexa Developer portal.
 Alexa uses this microservice to provide answers related to GST like what is gst? or
 what is the GST rate of Milk? etc.
 
+Architecture
+-------------
+
+.. image:: ../../images/alexa-gst-arch.png
+
 Documentation
 -------------
 
