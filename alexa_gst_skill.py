@@ -6,7 +6,6 @@
 # Goods and Services Tax in India
 
 import csv
-import json
 import logging
 import os
 import re
@@ -15,7 +14,6 @@ from datetime import datetime
 from random import randint
 
 import requests
-import unidecode
 from flask import Flask, render_template
 from flask_ask import Ask, question, statement
 
@@ -199,15 +197,33 @@ def handle_news():
 
 
 @ask.intent("YesIntent")
-def share_headlines():
+def yes_intent():
+    """
+    (QUESTION) Handles the 'Yes' answer for more news.
+    
+    When user asks on more news by saying 'Yes' to news question this intent will
+    again call the news intent and fetches a random headline.
+            
+    Returns:
+        News statements if GST news found from RSS
+        No GST news statement if GST news not found from RSS 
+        Error statement if can not process the request
+    """
     headlines = handle_news()
     return headlines
 
 
 @ask.intent("NoIntent")
 def no_intent():
-    bye_text = 'OK sure... bye'
-    return statement(bye_text)
+    """
+    (STATEMENT) Handles the 'No' answer
+                
+    Returns:
+        Bye statement
+    """
+    card_title = render_template('card_title')
+    bye_text = render_template('bye')
+    return statement(bye_text).simple_card(card_title, bye_text)
 
 
 def get_rss_feed(url, is_verify=True):

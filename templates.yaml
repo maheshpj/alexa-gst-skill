@@ -65,3 +65,5 @@ gst_news: Latest news on GST are {{ news }}, would like to hear more news?
 no_gst_news: It seems there are no latest GST news!
 
 error_prompt: I am sorry, something went wrong. Please try again!
+
+bye: OK sure... bye

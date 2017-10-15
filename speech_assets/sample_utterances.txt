@@ -52,9 +52,15 @@ NewsIntent whats the news on gst
 NewsIntent what is the latest news on gst
 NewsIntent whats the latest news on gst
 NewsIntent give me the latest news on gst
+NewsIntent tell me the gst news
 NewsIntent tell me the latest news on gst
 NewsIntent news on gst
 NewsIntent is there any latest news on gst
+NewsIntent a gst news
+NewsIntent tell me a news
+NewsIntent tell me a gst news
+NewsIntent give me a news
+NewsIntent give me a gst news
 
 YesIntent yes
 YesIntent sure

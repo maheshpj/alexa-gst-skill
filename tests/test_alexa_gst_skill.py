@@ -105,6 +105,7 @@ class SmokeTestGSTSkill(unittest.TestCase):
             gst.get_gst_news({})
         self.assertEqual('Failed parsing RSS feed', str(e.exception), "Should get parsing failed error")
 
+    @unittest.skip
     def test_reddit_headline(self):
         """ 
         Test the GST news from Reddit
