@@ -19,10 +19,10 @@
       ]
     },
     {
-        "intent": "YesIntent"
+      "intent": "YesIntent"
     },
     {
-        "intent": "NoIntent"
+      "intent": "NoIntent"
     },
     {
       "intent": "AMAZON.StopIntent"
