@@ -48,10 +48,10 @@ For better AWS security use custom AWS VPC and Security Group, add below configu
 
 .. code-block:: json
 
-    "vpc_config": { // Optional Virtual Private Cloud (VPC) configuration for Lambda function
-        "SubnetIds": [ "subnet-12345678" ], // Note: not all availability zones support Lambda!
+    "vpc_config": {
+        "SubnetIds": [ "subnet-12345678" ],
         "SecurityGroupIds": [ "sg-12345678" ]
-    },
+    }
 
 Setup
 -----
