@@ -398,7 +398,79 @@ def handle_back():
 @ask.intent('AMAZON.StartOverIntent')
 def start_over():
     """
-    (QUESTION) Handles the 'start over!'  built-in intention.
+    (?) Handles the 'start over!'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.NavigateSettingsIntent')
+def start_over():
+    """
+    (?) Handles the 'Navigate Settings'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.MoreIntent')
+def start_over():
+    """
+    (?) Handles the 'More'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.PageDownIntent')
+def start_over():
+    """
+    (?) Handles the 'page down'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.PageUpIntent')
+def start_over():
+    """
+    (?) Handles the 'page up'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.ScrollRightIntent')
+def start_over():
+    """
+    (?) Handles the 'scroll right'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.ScrollDownIntent')
+def start_over():
+    """
+    (QUESTION) Handles the 'scroll down'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.ScrollLeftIntent')
+def start_over():
+    """
+    (?) Handles the 'scroll left'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.ScrollUpIntent')
+def start_over():
+    """
+    (?) Handles the 'scroll up'  built-in intention.
+    """
+    pass
+
+
+@ask.intent('AMAZON.NextIntent')
+def start_over():
+    """
+    (?) Handles the 'next'  built-in intention.
     """
     pass
 

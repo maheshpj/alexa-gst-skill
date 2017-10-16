@@ -1,6 +1,9 @@
 Alexa GST Skill
 =============================
 
+.. image:: /images/gst-img-108_108.png
+    :alt: GST India
+
 Introduction
 ------------
 
@@ -11,6 +14,12 @@ in Alexa Developer portal.
 
 Alexa uses this microservice to provide answers related to GST like what is gst? or
 what is the GST rate of Milk? etc.
+
+Architecture
+-------------
+
+.. image:: /images/alexa-gst-arch.png
+    :alt: Alexa GST Skill Service Design
 
 Documentation
 -------------
@@ -43,10 +52,10 @@ For better AWS security use custom AWS VPC and Security Group, add below configu
 
 .. code-block:: json
 
-    "vpc_config": { // Optional Virtual Private Cloud (VPC) configuration for Lambda function
-        "SubnetIds": [ "subnet-12345678" ], // Note: not all availability zones support Lambda!
+    "vpc_config": {
+        "SubnetIds": [ "subnet-12345678" ],
         "SecurityGroupIds": [ "sg-12345678" ]
-    },
+    }
 
 Setup
 -----

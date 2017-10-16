@@ -10,13 +10,13 @@
       "intent": "NewsIntent"
     },
     {
-      "intent": "RateIntent",
       "slots": [
         {
           "name": "Item",
           "type": "LIST_OF_ITEMS"
         }
-      ]
+      ],
+      "intent": "RateIntent"
     },
     {
       "intent": "YesIntent"
@@ -44,6 +44,33 @@
     },
     {
       "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.NavigateSettingsIntent"
+    },
+    {
+      "intent": "AMAZON.MoreIntent"
+    },
+    {
+      "intent": "AMAZON.PageDownIntent"
+    },
+    {
+      "intent": "AMAZON.PageUpIntent"
+    },
+    {
+      "intent": "AMAZON.ScrollRightIntent"
+    },
+    {
+      "intent": "AMAZON.ScrollDownIntent"
+    },
+    {
+      "intent": "AMAZON.ScrollLeftIntent"
+    },
+    {
+      "intent": "AMAZON.ScrollUpIntent"
+    },
+    {
+      "intent": "AMAZON.NextIntent"
     }
   ]
 }
