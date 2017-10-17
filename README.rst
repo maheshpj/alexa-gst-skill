@@ -28,6 +28,21 @@ See Alexa GST Skill documentation link `here`_
 
 .. _here: https://maheshpj.github.io/index.html
 
+Utterances Examples
+--------------------
+
+Below are few utterances ezamples users can use with this service
+
+*   Alexa, what is gst india
+*   What is the gst india rate for milk
+*   What is the news on gst india
+*   Tell me a fact on gst india
+*   Give me an idea about gst india
+*   Gst india tax for the tea
+*   Give me a gst india trivia
+*   Tell me the latest news on gst india
+
+
 Tools and Technologies
 -----------------------
 
