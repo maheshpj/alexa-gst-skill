@@ -1,7 +1,7 @@
 Alexa GST Skill
 =============================
 
-.. image:: /images/gst-img-108_108.png
+.. image:: /images/gst-img-108-108.png
     :alt: GST India
 
 Introduction
