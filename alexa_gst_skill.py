@@ -38,7 +38,7 @@ def init():
     with open('gst-rates.csv') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            gst_rates_dict[row['\xef\xbb\xbfitem']] = row['rate']
+            gst_rates_dict[str(row['\xef\xbb\xbfitem'])] = str(row['rate'])
 
 
 # Session starter
@@ -143,6 +143,8 @@ def handle_rate(item):
         Unknown GST Item statement if item does not exists
     """
     card_title = render_template('card_title')
+    if not gst_rates_dict:
+        init()
     try:
         rate = gst_rates_dict[item]
     except Exception as e:
