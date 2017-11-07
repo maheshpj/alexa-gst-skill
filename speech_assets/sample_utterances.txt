@@ -1,75 +1,297 @@
 AboutIntent what is gst india
+AboutIntent what is the gst india
 AboutIntent whats gst india
+AboutIntent whats the gst india
 AboutIntent tell me about gst india
+AboutIntent tell me about the gst india
 AboutIntent give me an idea about gst india
+AboutIntent give me an idea about the gst india
 AboutIntent gst india what is that
+AboutIntent the gst india what is that
 AboutIntent what can you tell me about gst india
+AboutIntent what can you tell me about the gst india
 AboutIntent give me an introduction to gst india
+AboutIntent give me an introduction to the gst india
+AboutIntent what is a definition of gst india
+AboutIntent what is a definition of the gst india
+AboutIntent what is definition of gst india
+AboutIntent what is definition of the gst india
 AboutIntent what is the definition of gst india
+AboutIntent what is the definition of the gst india
+AboutIntent whats a definition of gst india
+AboutIntent whats a definition of the gst india
+AboutIntent whats definition of gst india
+AboutIntent whats definition of the gst india
 AboutIntent whats the definition of gst india
-AboutIntent definition of gst india
+AboutIntent whats the definition of the gst india
 
 FactIntent a fact on gst india
-FactIntent a gst india fact
-FactIntent tell me a fact on gst india
-FactIntent tell me a gst india fact
+FactIntent give a fact on gst india
 FactIntent give me a fact on gst india
+FactIntent tell a fact on gst india
+FactIntent tell me a fact on gst india
+FactIntent a gst india fact
+FactIntent give a gst india fact
 FactIntent give me a gst india fact
-FactIntent tell me trivia on gst india
-FactIntent tell me a gst india trivia
-FactIntent tell me a gst india information
+FactIntent tell a gst india fact
+FactIntent tell me a gst india fact
 FactIntent give me trivia on gst india
+FactIntent give trivia on gst india
+FactIntent tell me trivia on gst india
+FactIntent tell trivia on gst india
+FactIntent trivia on gst india
+FactIntent a gst india trivia
+FactIntent give a gst india trivia
 FactIntent give me a gst india trivia
+FactIntent tell a gst india trivia
+FactIntent tell me a gst india trivia
+FactIntent a gst india information
+FactIntent give a gst india information
+FactIntent give me a gst india information
+FactIntent tell a gst india information
+FactIntent tell me a gst india information
+FactIntent give information on gst india
+FactIntent give me information on gst india
 FactIntent give me some information on gst india
-FactIntent give me some gst india information
+FactIntent give some information on gst india
+FactIntent information on gst india
+FactIntent some information on gst india
+FactIntent tell information on gst india
+FactIntent tell me information on gst india
+FactIntent tell me some information on gst india
+FactIntent tell some information on gst india
 
+RateIntent what is gst india rate for {Item}
+RateIntent what is gst india rate for a {Item}
+RateIntent what is gst india rate for an {Item}
+RateIntent what is gst india rate for the {Item}
+RateIntent what is gst india slab for {Item}
+RateIntent what is gst india slab for a {Item}
+RateIntent what is gst india slab for an {Item}
+RateIntent what is gst india slab for the {Item}
+RateIntent what is gst india tax for {Item}
+RateIntent what is gst india tax for a {Item}
+RateIntent what is gst india tax for an {Item}
+RateIntent what is gst india tax for the {Item}
 RateIntent what is the gst india rate for {Item}
-RateIntent what is the gst india tax for {Item}
+RateIntent what is the gst india rate for a {Item}
+RateIntent what is the gst india rate for an {Item}
+RateIntent what is the gst india rate for the {Item}
 RateIntent what is the gst india slab for {Item}
+RateIntent what is the gst india slab for a {Item}
+RateIntent what is the gst india slab for an {Item}
+RateIntent what is the gst india slab for the {Item}
+RateIntent what is the gst india tax for {Item}
+RateIntent what is the gst india tax for a {Item}
+RateIntent what is the gst india tax for an {Item}
+RateIntent what is the gst india tax for the {Item}
+RateIntent whats gst india rate for {Item}
+RateIntent whats gst india rate for a {Item}
+RateIntent whats gst india rate for an {Item}
+RateIntent whats gst india rate for the {Item}
+RateIntent whats gst india slab for {Item}
+RateIntent whats gst india slab for a {Item}
+RateIntent whats gst india slab for an {Item}
+RateIntent whats gst india slab for the {Item}
+RateIntent whats gst india tax for {Item}
+RateIntent whats gst india tax for a {Item}
+RateIntent whats gst india tax for an {Item}
+RateIntent whats gst india tax for the {Item}
+RateIntent whats the gst india rate for {Item}
+RateIntent whats the gst india rate for a {Item}
+RateIntent whats the gst india rate for an {Item}
+RateIntent whats the gst india rate for the {Item}
+RateIntent whats the gst india slab for {Item}
+RateIntent whats the gst india slab for a {Item}
+RateIntent whats the gst india slab for an {Item}
+RateIntent whats the gst india slab for the {Item}
+RateIntent whats the gst india tax for {Item}
+RateIntent whats the gst india tax for a {Item}
+RateIntent whats the gst india tax for an {Item}
+RateIntent whats the gst india tax for the {Item}
+RateIntent what is {Item} gst india rate
+RateIntent what is {Item} gst india slab
+RateIntent what is {Item} gst india tax
+RateIntent what is a {Item} gst india rate
+RateIntent what is a {Item} gst india slab
+RateIntent what is a {Item} gst india tax
+RateIntent what is an {Item} gst india rate
+RateIntent what is an {Item} gst india slab
+RateIntent what is an {Item} gst india tax
 RateIntent what is the {Item} gst india rate
 RateIntent what is the {Item} gst india slab
 RateIntent what is the {Item} gst india tax
-RateIntent whats the gst india rate for {Item}
-RateIntent whats the gst india tax for {Item}
-RateIntent whats the gst india slab for {Item}
+RateIntent whats {Item} gst india rate
+RateIntent whats {Item} gst india slab
+RateIntent whats {Item} gst india tax
+RateIntent whats a {Item} gst india rate
+RateIntent whats a {Item} gst india slab
+RateIntent whats a {Item} gst india tax
+RateIntent whats an {Item} gst india rate
+RateIntent whats an {Item} gst india slab
+RateIntent whats an {Item} gst india tax
 RateIntent whats the {Item} gst india rate
 RateIntent whats the {Item} gst india slab
 RateIntent whats the {Item} gst india tax
+RateIntent tell me {Item} gst india rate
+RateIntent tell me {Item} gst india slab
+RateIntent tell me {Item} gst india tax
+RateIntent tell me a {Item} gst india rate
+RateIntent tell me a {Item} gst india slab
+RateIntent tell me a {Item} gst india tax
+RateIntent tell me an {Item} gst india rate
+RateIntent tell me an {Item} gst india slab
+RateIntent tell me an {Item} gst india tax
 RateIntent tell me the {Item} gst india rate
 RateIntent tell me the {Item} gst india slab
 RateIntent tell me the {Item} gst india tax
+RateIntent gst india rate for {Item}
+RateIntent gst india rate for a {Item}
+RateIntent gst india rate for an {Item}
 RateIntent gst india rate for the {Item}
+RateIntent gst india slab for {Item}
+RateIntent gst india slab for a {Item}
+RateIntent gst india slab for an {Item}
 RateIntent gst india slab for the {Item}
+RateIntent gst india tax for {Item}
+RateIntent gst india tax for a {Item}
+RateIntent gst india tax for an {Item}
 RateIntent gst india tax for the {Item}
 RateIntent {Item} gst india rate
 RateIntent {Item} gst india slab
 RateIntent {Item} gst india tax
+RateIntent a {Item} gst india rate
+RateIntent a {Item} gst india slab
+RateIntent a {Item} gst india tax
+RateIntent an {Item} gst india rate
+RateIntent an {Item} gst india slab
+RateIntent an {Item} gst india tax
+RateIntent the {Item} gst india rate
+RateIntent the {Item} gst india slab
+RateIntent the {Item} gst india tax
+RateIntent find {Item} gst india rate
+RateIntent find {Item} gst india slab
+RateIntent find {Item} gst india tax
+RateIntent find a {Item} gst india rate
+RateIntent find a {Item} gst india slab
+RateIntent find a {Item} gst india tax
+RateIntent find an {Item} gst india rate
+RateIntent find an {Item} gst india slab
+RateIntent find an {Item} gst india tax
 RateIntent find the {Item} gst india rate
 RateIntent find the {Item} gst india slab
 RateIntent find the {Item} gst india tax
 
-NewsIntent what is the news on gst india
-NewsIntent whats the news on gst india
-NewsIntent what is the latest news on gst india
-NewsIntent whats the latest news on gst india
-NewsIntent give me the latest news on gst india
-NewsIntent tell me the gst india news
-NewsIntent tell me the latest news on gst india
-NewsIntent news on gst india
-NewsIntent is there any latest news on gst india
 NewsIntent a gst india news
-NewsIntent tell me a news on gst india
-NewsIntent give me a news on gst india
+NewsIntent a latest gst india news
+NewsIntent a latest news on gst india
+NewsIntent a news on gst india
+NewsIntent give a gst india news
+NewsIntent give a latest gst india news
+NewsIntent give a latest news on gst india
+NewsIntent give a news on gst india
+NewsIntent give gst india news
+NewsIntent give latest gst india news
+NewsIntent give latest news on gst india
 NewsIntent give me a gst india news
+NewsIntent give me a latest gst india news
+NewsIntent give me a latest news on gst india
+NewsIntent give me a news on gst india
+NewsIntent give me gst india news
+NewsIntent give me latest gst india news
+NewsIntent give me latest news on gst india
+NewsIntent give me news on gst india
+NewsIntent give me the gst india news
+NewsIntent give me the latest gst india news
+NewsIntent give me the latest news on gst india
+NewsIntent give me the news on gst india
+NewsIntent give news on gst india
+NewsIntent give the gst india news
+NewsIntent give the latest gst india news
+NewsIntent give the latest news on gst india
+NewsIntent give the news on gst india
+NewsIntent gst india news
+NewsIntent gst india news
+NewsIntent is there any gst india news
+NewsIntent is there any latest gst india news
+NewsIntent is there any latest news on gst india
+NewsIntent is there any news on gst india
+NewsIntent is there gst india news
+NewsIntent is there latest gst india news
+NewsIntent is there latest news on gst india
+NewsIntent is there news on gst india
+NewsIntent latest gst india news
+NewsIntent latest gst india news
+NewsIntent latest news on gst india
+NewsIntent latest news on gst india
+NewsIntent news on gst india
+NewsIntent news on gst india
+NewsIntent tell a gst india news
+NewsIntent tell a latest gst india news
+NewsIntent tell a latest news on gst india
+NewsIntent tell a news on gst india
+NewsIntent tell gst india news
+NewsIntent tell latest gst india news
+NewsIntent tell latest news on gst india
+NewsIntent tell me a gst india news
+NewsIntent tell me a latest gst india news
+NewsIntent tell me a latest news on gst india
+NewsIntent tell me a news on gst india
+NewsIntent tell me gst india news
+NewsIntent tell me latest gst india news
+NewsIntent tell me latest news on gst india
+NewsIntent tell me news on gst india
+NewsIntent tell me the gst india news
+NewsIntent tell me the latest gst india news
+NewsIntent tell me the latest news on gst india
+NewsIntent tell me the news on gst india
+NewsIntent tell news on gst india
+NewsIntent tell the gst india news
+NewsIntent tell the latest gst india news
+NewsIntent tell the latest news on gst india
+NewsIntent tell the news on gst india
+NewsIntent the gst india news
+NewsIntent the latest gst india news
+NewsIntent the latest news on gst india
+NewsIntent the news on gst india
+NewsIntent was there any gst india news
+NewsIntent was there any latest gst india news
+NewsIntent was there any latest news on gst india
+NewsIntent was there any news on gst india
+NewsIntent was there gst india news
+NewsIntent was there latest gst india news
+NewsIntent was there latest news on gst india
+NewsIntent was there news on gst india
+NewsIntent were there any gst india news
+NewsIntent were there any latest gst india news
+NewsIntent were there any latest news on gst india
+NewsIntent were there any news on gst india
+NewsIntent were there gst india news
+NewsIntent were there latest gst india news
+NewsIntent were there latest news on gst india
+NewsIntent were there news on gst india
+NewsIntent what is a latest news on gst india
+NewsIntent what is a news on gst india
+NewsIntent what is latest news on gst india
+NewsIntent what is news on gst india
+NewsIntent what is the latest news on gst india
+NewsIntent what is the news on gst india
+NewsIntent whats a latest news on gst india
+NewsIntent whats a news on gst india
+NewsIntent whats latest news on gst india
+NewsIntent whats news on gst india
+NewsIntent whats the latest news on gst india
+NewsIntent whats the news on gst india
 
-YesIntent yes
-YesIntent sure
-YesIntent yaa
 YesIntent ok
 YesIntent ok sure
+YesIntent sure
+YesIntent yaa
+YesIntent yep
+YesIntent yes
 
-NoIntent no
-NoIntent naa
-NoIntent nope
 NoIntent go away
+NoIntent naa
+NoIntent no
+NoIntent nope
 NoIntent not now
