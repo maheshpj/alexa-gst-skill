@@ -80,10 +80,12 @@ class SmokeTestGSTSkill(unittest.TestCase):
         self.assertEqual('28%', rate, "Cars GST rate should be 28%")
         rate = gst.gst_rates_dict['tractorparts']
         self.assertEqual('18%', rate, "Tractorparts GST rate should be 18%")
-        rate = gst.gst_rates_dict['custard powder']
+        rate = gst.gst_rates_dict['custardpowder']
         self.assertEqual('18%', rate, "Custard powder GST rate should be 18%")
-        rate = gst.gst_rates_dict['bamboo furniture']
+        rate = gst.gst_rates_dict['bamboofurniture']
         self.assertEqual('18%', rate, "Bamboo furniture GST rate should be 18%")
+        rate = gst.gst_rates_dict['apparelabovers1000']
+        self.assertEqual('12%', rate, "Apparel above Rs 1000 GST rate should be 12%")
 
     def test_news(self):
         """ 
