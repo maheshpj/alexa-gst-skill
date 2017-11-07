@@ -38,7 +38,7 @@ def init():
     with open('gst-rates.csv') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            gst_rates_dict[str(row['\xef\xbb\xbfitem'])] = str(row['rate'])
+            gst_rates_dict[str(row['\xef\xbb\xbfitem']).lower()] = str(row['rate'])
 
 
 # Session starter
@@ -144,13 +144,13 @@ def handle_rate(item):
     """
     card_title = render_template('card_title')
     logging.info('Asked rate for item: {}'.format(item))
-    
+
     if not gst_rates_dict:
         init()
     try:
-        rate = gst_rates_dict[item]
+        rate = gst_rates_dict[str(item).lower()]
     except Exception as e:
-        logging.error('Failed getting rate for item {}'.format(item))
+        logging.error('Failed getting rate for item {} with error: {}'.format(item, e))
         return unknown_item_reprompt()
 
     if rate is not None:
