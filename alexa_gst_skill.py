@@ -143,6 +143,8 @@ def handle_rate(item):
         Unknown GST Item statement if item does not exists
     """
     card_title = render_template('card_title')
+    logging.info('Asked rate for item: {}'.format(item))
+    
     if not gst_rates_dict:
         init()
     try:
