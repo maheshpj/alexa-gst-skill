@@ -1,16 +1,16 @@
-welcome: welcome to gst!
+welcome: welcome to GST India! you can ask GST India about facts, news and item rates. You can say, tell me a news on gst india or what is gst india rate for milk?
 
-welcome_re: gst. How may I help you?
+welcome_re: you can ask GST India about facts, news and item rates, you can say tell me a news on gst india or what is gst rate for milk?
 
-welcome_card: gst is an Alexa skill written by Mahesh Jadhav. Goods and Services Tax in India
+welcome_card: GST India is an Alexa skill written by Mahesh Jadhav. Goods and Services Tax in India
 
 stop_bye: Goodbye!
 
 cancel_bye: OK, goodbye!
 
-help_text: gst is an Alexa skill that does things. You can ask about facts on gst or what is gst. Try now!
+help_text: You can ask GST India about facts, news and item rates, you can say tell me a news on gst india or what is gst rate for milk?. Try now!
 
-card_title: GST
+card_title: GST India
 
 about: |
   gst is Goods and Services Tax in India. gst is an indirect tax which was introduced in India on 1 July 2017 and
