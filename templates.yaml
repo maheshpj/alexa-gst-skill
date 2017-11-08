@@ -13,8 +13,9 @@ help_text: You can ask GST India about facts, news and item rates, you can say t
 card_title: GST India
 
 about: |
-  gst is Goods and Services Tax in India. gst is an indirect tax which was introduced in India on 1 July 2017 and
+  GST India is Goods and Services Tax in India. GST is an indirect tax which was introduced in India on 1 July 2017 and
   was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments.
+  you can ask GST India about facts, news and item rates, you can say tell me a news on gst india or what is gst rate for milk?
 
 gst_fact_0: |
   The GST Council in India has proposed a four-tier rate structure with two standard rates – 12% and 18%, a lower
